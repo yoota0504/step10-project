@@ -17,7 +17,7 @@ public class InquiryController {
 @Autowired InquiryService inquiryService;
 
 @GetMapping("/InquiryForm")
-public String inputForm(@ModelAttribute InquiryForm formData,Model model) {
+public String inputForm(@ModelAttribute InquiryForm formData, Model model) {
 	
 	
 model.addAttribute("formData", new InquiryForm());
@@ -25,7 +25,7 @@ model.addAttribute("formData", new InquiryForm());
 return "InquiryForm";
 }
 
-@PostMapping("InquiryResult")
+@PostMapping("/InquiryResult")
 public String Result(@ModelAttribute InquiryForm formData, Model model) {
 
 
