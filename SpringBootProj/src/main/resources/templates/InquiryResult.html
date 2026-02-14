@@ -7,6 +7,8 @@
 	<body>
 		<div th:object="${formData}">
 			入力を受付ました。
+			<div th:text ="'受付日時:' + *{recdt}"><br>ここに受付日時</div>
+			<div th:text ="'受付番号:' + *{recno}"><br>ここに受付番号</div>
 			<div th:text ="'お名前：' + *{name}"><br>ここにお名前</div>
 			<div th:text ="'メールアドレス:' + *{mail}"><br>ここにメールアドレス</div>
 			<div th:text ="'ご年齢：' + *{age}"><br>ここにご年齢</div>
